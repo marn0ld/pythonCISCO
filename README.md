@@ -1,5 +1,6 @@
 # pythonCISCO
 ![image](https://user-images.githubusercontent.com/75033343/122388027-2775f880-cf78-11eb-8933-88e988344e05.png)
+git clone -> копіювання репозиторію
 git add -> додавання файлу
 git commit -m "повідомлення коміту"
 git push -> пуш файлу на гітхаб
