@@ -13,7 +13,7 @@ def stringcheck(s):
 
     for el in list(q):
         if el.isdigit(): #виділяє з нього всі числа в окремий масив
-            nums.append(el) 
+            nums.append(el)
             nums2 = "".join(nums)
         else:
             letters.append(el)

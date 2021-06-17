@@ -1,27 +1,15 @@
-# Сформувати список з 30 випадкових цілих чисел від -100 до + 100.
-# Знайти максимальний елемент списку і його порядковий номер.Вивести пари від’ємних чисел, що стоять поруч.
-# Відредагувати файл README.md , додавши в нього скріни виконання всіх команд з консолі git. Та підписавши дії, які виконувались.
-# Налаштувати SSH-ключі для доступу до акаунту без постійної верифікації..
+q = '13dsf6s21 34jljsfls adasdf 3421'
+def n(s):
+    sep = s.split()
+    nums = []
+    nonums = []
+    for el in list(sep):
+        if el.isdigit():
+            nums.append(el)
+        elif not el.isdigit():
+            nonums.append(el)
 
-import numpy as np
+    print("List with numbers:",nums)
+    print("List without numbers:",nonums)
 
-#список з 30 випадкових цілих чисел від -100 до + 100
-list = np.random.randint(-100,101,30)
-
-# знайти максимальний елемент списку
-print(list,"\nMax number:",max(list))
-
-#його порядковий номер
-print("Position of a max number:",np.argmax(list))
-
-#пари від’ємних чисел, що стоять поруч
-for i in range(len(list)):
-    if list[i] < 0 and 0 > list[i+1]:
-        print("Pare negative numbers:",list[i],",",list[i+1])
-    if list[i+1] == list[-1]: #запобігання warning - вихід за межі списку
-        break
-
-
-
-
-
+n(q)
