@@ -1,5 +1,5 @@
 # pythonCISCO
-![image](https://user-images.githubusercontent.com/75033343/121684826-e5f0d380-cac7-11eb-8b1e-4b12034120d5.png)
+![image](https://user-images.githubusercontent.com/75033343/122388027-2775f880-cf78-11eb-8933-88e988344e05.png)
 git add -> додавання файлу
 git commit -m "повідомлення коміту"
 git push -> пуш файлу на гітхаб
