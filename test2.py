@@ -4,12 +4,12 @@ from tkinter import *
 root = Tk()
 root.title("Arno's calculator")
 
-# interface
+# налаштування поля вводу й виводу
 box = Entry(root, width=70, borderwidth=15, bg="Yellow")
 box.grid(row=0, column=0, columnspan=7, padx=10, pady=10)
 
 
-# buttons functions(numbers)
+# функції для кнопок
 def knopka_func(number):
     global calc
     current = box.get()
@@ -44,7 +44,7 @@ def knopka_mul():
     mul = int(box.get())
     box.delete(0, END)
 
-# buttons functions(math functions)
+# функції для кнопок(математичні функції)
 def knopka_cos():
     global cos
     global index
@@ -146,7 +146,7 @@ knopka_8 = Button(root, text="8", padx=25, pady=1, command=lambda: knopka_func(8
 knopka_9 = Button(root, text="9", padx=25, pady=1, command=lambda: knopka_func(9),  bg="Black", foreground="Yellow")
 knopka_0 = Button(root, text="0", padx=25, pady=1, command=lambda: knopka_func(0),  bg="Black", foreground="Yellow")
 
-# buttons(operations)
+# налаштування кнопок(знаки)
 add = Button(root, text="+", padx=40, pady=1, command=knopka_add, bg="Yellow")
 sub = Button(root, text="-", padx=40, pady=1, command=knopka_sub, bg="Yellow")
 div = Button(root, text="/", padx=40, pady=1, command=knopka_div, bg="Yellow")
@@ -154,7 +154,7 @@ mul = Button(root, text="*", padx=40, pady=1, command=knopka_mul, bg="Yellow")
 equal = Button(root, text="=", padx=40, pady=1, command=knopka_equal, bg="Yellow")
 clear = Button(root, text="Clear", padx=39, pady=1, command=knopka_clear, bg="Yellow")
 
-# buttons(operations)
+# налаштування кнопок(математичні функції)
 cos = Button(root, text="cos", padx=28, pady=1, command=knopka_cos, bg="Yellow")
 sin = Button(root, text="sin", padx=29, pady=1, command=knopka_sin, bg="Yellow")
 tg = Button(root, text="tan", padx=29, pady=1, command=knopka_tg, bg="Yellow")
@@ -164,7 +164,7 @@ ln = Button(root, text="ln", padx=33, pady=1, command=knopka_ln, bg="Yellow")
 percent = Button(root, text="%", padx=33, pady=1, command=knopka_percent, bg="Yellow")
 binconvert = Button(root, text="bin", padx=33, pady=1, command=knopka_bin, bg="Yellow")
 
-# placing buttons(numbers)
+# розташування кнопок(числа)
 knopka_1.grid(row=3, column=3)
 knopka_2.grid(row=3, column=4)
 knopka_3.grid(row=3, column=5)
@@ -177,7 +177,7 @@ knopka_8.grid(row=1, column=4)
 knopka_9.grid(row=1, column=5)
 knopka_0.grid(row=4, column=3)
 
-# placing buttons(functions)
+# розташування кнопок(математичні функції)
 sin.grid(row=1, column=0)
 cos.grid(row=2, column=0)
 tg.grid(row=3, column=0)
@@ -187,7 +187,7 @@ ln.grid(row=6, column=0)
 percent.grid(row=7, column=0)
 binconvert.grid(row=8,column=0)
 
-# placing buttons(sings)
+# розташування кнопок(знаки)
 add.grid(row=1, column=6)
 sub.grid(row=2, column=6)
 div.grid(row=3, column=6)
